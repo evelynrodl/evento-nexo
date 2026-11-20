@@ -497,10 +497,23 @@ td.horario {
 
 .btn-form-externo {
     display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(78, 119, 239, 0.1);
     color: var(--azul-escuro);
     font-weight: 700;
     font-size: 0.92rem;
-    text-decoration: underline;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 1px solid rgba(78, 119, 239, 0.3);
+    transition: all 0.25s ease;
+    margin-bottom: 2rem;
+}
+
+.btn-form-externo:hover {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(30, 0, 114, 0.15);
 }
 
 .form-container {
@@ -509,14 +522,16 @@ td.horario {
     background: var(--branco);
     border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 12px 30px rgba(27, 33, 73, 0.08);
-    padding: 0.5rem;
+    box-shadow: 0 15px 35px rgba(27, 33, 73, 0.08);
+    border-top: 5px solid var(--amarelo);
+    padding: 0;
 }
 
 .form-container iframe {
     width: 100%;
     height: 680px;
     border: none;
+    display: block;
 }
 
 /* RODAPÉ */
